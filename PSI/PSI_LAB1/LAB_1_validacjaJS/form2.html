@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="Description" content="Materiały KSI UMG">
+  <meta name="Keywords" content="">
+  <meta name="Author" content="ER">
+  <meta name="Generator" content="kED">
+  <link href="form2.css" rel="stylesheet">
+  <script src="form2.js"></script>
+  <title>form2 - zamówienia</title>
+</head>
+<body>
+<p>JavaScript i DOM - formularze</p>
+<h2> Zamówienie na bilety</h2>
+<form id="idform" action="." method="post" onsubmit="return wyslijFormularz(this)">
+<table>
+<tr>
+	<td><span class="crodzaj">Rodzaj</span></td>
+	<td><span id="idilenag">Liczba sztuk</span></td>
+</tr>
+<tr>
+	<td><input type="checkbox" name="rodzaj" onclick="bilecikulg()" id="ulga"> ulgowe</td>
+	<td><input type="text" name="ile" id="idileulg"></td>
+</tr>
+<tr>
+	<td><input type="checkbox" name="rodzaj" onclick="bileciknorm()" id="norm"> normalne</td>
+	<td><input type="text" name="ile" id="idilenor"></td>
+</tr>
+</table>
+
+<p><input type="submit" value="Wyślij dane" id="idwyslij"> </p>
+<p><input value="wyczyść" type="reset" id="idczysc"></p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form3.js"></script>
+    <link href="form3.css" rel="stylesheet">
+</head>
+<body>
+    <form id="idform" action="." method="post" onsubmit="return wyslijFormularz(this)">
+    <p>Wypełnij formularz</p>
+    <table>
+        <tr>
+            <td><span>Jakie znasz jezyki?</span></td>
+            <td><span>Języki te znasz w stopniu</span></td>
+        </tr>
+    <tr>
+        <td><input type="checkbox" name="jezyk" id="ang" onclick="angielski()">angielski</td>
+        <td id="angol">
+            <input type="radio" name="poziom1Ang" value="słabym" disabled="disabled" id="anglow">słabym
+            <input type="radio" name="poziom2Ang" value="średnim" disabled="disabled" id="angmed">średnim
+            <input type="radio" name="poziom3Ang" value="dobrym" disabled="disabled" id="angbest">dobrym
+            <input type="radio" name="poziom4Ang" value="wyśmienitym" disabled="disabled" id="angsuper">wyśmienitym
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="jezyk" id="fra" onclick="francuski()">francuski</td>
+        <td id="zabol">
+            <input type="radio" name="poziom1Fra" disabled="disabled" value="słabym" id="fralow">słabym
+            <input type="radio" name="poziom2Fra" disabled="disabled" value="średnim" id="framed">średnim
+            <input type="radio" name="poziom3Fra" disabled="disabled" value="dobrym" id="frabest">dobrym
+            <input type="radio" name="poziom4Fra" disabled="disabled" value="wyśmienitym" id="frasuper">wyśmienitym
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="jezyk" id="nie" onclick="niemiecki()">niemiecki</td>
+        <td id="szfabol">
+            <input type="radio" name="poziom1Nie" disabled="disabled" value="słabym" id="nielow">słabym
+            <input type="radio" name="poziom2Nie" disabled="disabled" value="średnim" id="niemed">średnim
+            <input type="radio" name="poziom3Nie" disabled="disabled" value="dobrym" id="niebest">dobrym
+            <input type="radio" name="poziom4Nie" disabled="disabled" value="wyśmienitym" id="niesuper">wyśmienitym
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="jezyk" id="other">oraz <input type="text" name="jezyk" id="textother" onchange="inny()"></td>
+        <td id="innol">
+            <input type="radio" name="poziom1Inny" disabled="disabled" value="słabym" id="otherlow">słabym
+            <input type="radio" name="poziom2Inny" disabled="disabled" value="średnim" id="othermed">średnim
+            <input type="radio" name="poziom3Inny" disabled="disabled" value="dobrym" id="otherbest">dobrym
+            <input type="radio" name="poziom4Inny" disabled="disabled" value="wyśmienitym" id="othersuper">wyśmienitym
+        </td>
+    </tr>
+    </table>
+    <p><input type="submit" value="Wyślij dane"> </p>
+    <p><input value="wyczyść" type="reset"></p>
+    </form>
+</body>
+</html>
