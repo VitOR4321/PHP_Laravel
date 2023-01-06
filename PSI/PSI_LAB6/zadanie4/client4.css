@@ -1,0 +1,12 @@
+.error{
+    color: red;
+    text-decoration: underline solid;
+}
+body{
+    background-color: yellow;
+}
+.formularz{
+    border: 1px black solid;
+    padding: 0px;
+    width: 27.5%;
+}
